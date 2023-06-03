@@ -1,6 +1,14 @@
 console.log('hello World!');
 
-function createTokenOfPhone(aaaa) {
+function createTokenOfPhone(myPhone) {
+  // 1. 휴대폰번호 자릿수 맞는지 확인하기
+  if (myPhone.length !== 10 && myPhone.length !== 11) {
+    console.log('에러발생! 핸드폰 번호를 제대로 입력해 주세요!');
+    return;
+  }
+
+  //2. 핸드폰 토큰 6자리 만들기
+  const aaaa = 6;
   if (aaaa === undefined) {
     console.log('error, 갯수를 제대로 입력하세요');
     return;
