@@ -27,4 +27,6 @@ function createTokenOfPhone(myPhone) {
   console.log(result);
 }
 
-getToken(3);
+// 3. 핸드폰 번호에 토큰 전송하기
+
+console.log(myPhone + '번호로 인증번호' + result + '를 전송합니다!');
